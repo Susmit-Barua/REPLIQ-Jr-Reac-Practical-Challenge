@@ -102,7 +102,7 @@ export default function Productlist({ products }) {
 }
 export const getServerSideProps = async () => {
   const products = await fetchApi(
-    `${baseURL}/products/v2/list?store=US&offset=0&categoryId=4209&limit=2&country=US&sort=freshness&currency=USD&sizeSchema=US&lang=en-US`
+    `${baseURL}/products/v2/list?store=US&offset=0&categoryId=4209&limit=7&country=US&sort=freshness&currency=USD&sizeSchema=US&lang=en-US`
   );
 
   return {
